@@ -15,7 +15,6 @@ export class PlayerRoute {
   constructor(protected client: Manager) {}
 
   main(fastify: Fastify.FastifyInstance) {
-    main(fastify: Fastify.FastifyInstance) {
     fastify.get("/", (req, res) => {
       res.send("Hello, world!");
     });
