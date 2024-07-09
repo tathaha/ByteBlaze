@@ -128,7 +128,7 @@ utilities:
   WEB_SERVER:
     enable: true
     port: ${PORT}
-    whitelist: [["0.0.0.0"]] # Example: ["lavalink.dev"]
+    whitelist: ["0.0.0.0"] # Example: ["lavalink.dev"]
     auth: "youshallnotpass"
 
 # You can custom your emoji here!
