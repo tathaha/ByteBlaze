@@ -126,9 +126,9 @@ utilities:
 
   # WS/REST server for using web player
   WEB_SERVER:
-    enable: false
+    enable: true
     port: ${PORT}
-    whitelist: [] # Example: ["lavalink.dev"]
+    whitelist: [["0.0.0.0"]] # Example: ["lavalink.dev"]
     auth: "youshallnotpass"
 
 # You can custom your emoji here!
