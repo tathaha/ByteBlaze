@@ -19,7 +19,7 @@ export class PlayerRoute {
     fastify.patch("/:guildId", (req, res) => new PatchControl(this.client).main(req, res));
     fastify.delete("/:guildId", (req, res) => deletePlayer(this.client, req, res));
     fastify.post("/", (req, res) => new PostCreatePlayer(this.client).main(req, res));
-    fastify.get("/helloworld", (req, res) => {res.send({ message: "Hello, world!" });
+    fastify.get("/helloworld", (req, res) => ({res.send({ message: "Hello, world!" });
     fastify.get("/:guildId/loop", (req, res) => getCurrentLoop(this.client, req, res));
     fastify.get("/:guildId/pause", (req, res) => getCurrentPaused(this.client, req, res));
     fastify.get("/:guildId/position", (req, res) => getCurrentPosition(this.client, req, res));
