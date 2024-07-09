@@ -47,7 +47,7 @@ player:
 
   # You can add more Lavalink servers!
   NODES:
-    - host: "${NODE}"
+    - host: "${NODELINK}"
       port: 443 # Your host port here
       name: "${NAME}" #only a-z A-Z 0-9 and _
       auth: "${NODE_PASS}"
