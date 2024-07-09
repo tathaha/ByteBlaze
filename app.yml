@@ -127,7 +127,7 @@ utilities:
   # WS/REST server for using web player
   WEB_SERVER:
     enable: true
-    port: ${PORT}
+    port: true
     whitelist: ["0.0.0.0"] # Example: ["lavalink.dev"]
     auth: "youshallnotpass"
 
