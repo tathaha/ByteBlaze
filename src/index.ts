@@ -21,7 +21,7 @@ configData.bot.TOKEN.forEach((token, index) => {
 });
 
 const app: Express = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
