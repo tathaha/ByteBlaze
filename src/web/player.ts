@@ -15,6 +15,10 @@ export class PlayerRoute {
   constructor(protected client: Manager) {}
 
   main(fastify: Fastify.FastifyInstance) {
+    main(fastify: Fastify.FastifyInstance) {
+    fastify.get("/", (req, res) => {
+      res.send("Hello, world!");
+    });
     fastify.get("/:guildId", (req, res) => getStatus(this.client, req, res));
     fastify.patch("/:guildId", (req, res) => new PatchControl(this.client).main(req, res));
     fastify.delete("/:guildId", (req, res) => deletePlayer(this.client, req, res));
