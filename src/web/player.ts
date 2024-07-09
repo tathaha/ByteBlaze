@@ -1,5 +1,5 @@
 import { Manager } from "../manager.js";
-import Fastify from "fastify";
+import Fastify from "express";
 import { getStatus } from "./route/getStatus.js";
 import { getQueueStatus } from "./route/getQueueStatus.js";
 import { getMemberStatus } from "./route/getMemberStatus.js";
