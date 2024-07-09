@@ -1,6 +1,5 @@
 import { Manager } from "./manager.js";
 import { ConfigDataService } from "./services/ConfigDataService.js";
-import express, { Express, Request, Response } from "express";
 const configData = new ConfigDataService().data;
 configData.bot.TOKEN.forEach((token, index) => {
   const byteblaze = new Manager(configData, index, configData.utilities.MESSAGE_CONTENT.enable);
@@ -18,15 +17,4 @@ configData.bot.TOKEN.forEach((token, index) => {
     });
   byteblaze.start();
   byteblaze.login(token);
-});
-
-const app: Express = express();
-const port = process.env.PORT || 9000;
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server");
-});
-
-app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
 });
