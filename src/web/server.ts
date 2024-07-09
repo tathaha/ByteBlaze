@@ -1,5 +1,5 @@
 import { Manager } from "../manager.js";
-import Fastify from "express";
+import Fastify from "fastify";
 import WebsocketPlugin from "@fastify/websocket";
 import { WebsocketRoute } from "./websocket.js";
 import { PlayerRoute } from "./player.js";
