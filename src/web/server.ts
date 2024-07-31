@@ -87,3 +87,4 @@ export class WebServer {
         } else this.client.logger.error(WebServer.name, err);
       });
   }
+}
