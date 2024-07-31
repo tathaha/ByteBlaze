@@ -8,7 +8,7 @@ bot:
   # You can add more than 1 token to clone the bot 
   # Note that performance will be dreaded and you can't set each config for each cloned bot
   # Config data of each bot will be the same
-  TOKEN: ["${BOT_TOKEN}"]
+  TOKEN: ["${TOKEN}"]
   EMBED_COLOR: "#2B2D31"
   OWNER_ID: "685716988471148552"
   ADMIN: ["685716988471148552"]
